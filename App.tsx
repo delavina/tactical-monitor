@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-
+import TacticalBallisticMonitor from './components/TrajectoryCalculationMonitor';
+/* import TestComponent from './components/TestComp';
+ */
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <TacticalBallisticMonitor /> 
+    {/* <TestComponent />  */}
       <StatusBar style="auto" />
     </View>
   );
@@ -14,7 +17,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });

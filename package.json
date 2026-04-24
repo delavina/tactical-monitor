@@ -4,18 +4,26 @@
   "main": "index.ts",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "prebuild": "npx expo prebuild --platform ios"
   },
   "dependencies": {
-    "expo": "~54.0.32",
+    "@expo/vector-icons": "^15.0.3",
+    "expo": "^54.0.33",
+    "expo-dev-client": "~6.0.20",
     "expo-status-bar": "~3.0.9",
+    "expo-video": "~3.0.16",
     "react": "19.1.0",
-    "react-native": "0.81.5"
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-dotenv": "^3.4.11",
+    "react-native-web": "^0.21.0"
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
+    "babel-preset-expo": "^55.0.10",
     "typescript": "~5.9.2"
   },
   "private": true
