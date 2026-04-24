@@ -18,14 +18,15 @@ import { VIDEO_FILE } from '@env';
 const { width, height } = Dimensions.get('window');
 
 // Try to use video, fallback to image if not available
-const USE_VIDEO = true; // TODO: Set to false to use image instead
-const VIDEO_SOURCE = require(`../assets/${VIDEO_FILE || '12_Erich.mp4'}`);
-// const VIDEO_SOURCE = require('../assets/12_Erich.mp4'); // TODO: Uncomment when view.mp4 is added to assets
-// const VIDEO_SOURCE = null; // Placeholder to prevent build error
+const USE_VIDEO = false; // TODO: Set to true to use video
+const VIDEO_SOURCE = null; // Placeholder to prevent build error
+//const VIDEO_SOURCE = require(`../assets/${VIDEO_FILE || 'your_video_file.mp4'}`);
+
 const IMAGE_SOURCE = require('../assets/Insert_grey_clean.jpg'); // Fallback image
 
-// TODO: Drop view.mp4 into tactical-monitor/assets/.
-// TODO: Uncomment that line: const VIDEO_SOURCE = require('../assets/view.mp4');
+// TODO: Drop your desired video file into tactical-monitor/assets/.
+// TODO: Uncomment that line: const VIDEO_SOURCE = null;
+// TODO: Uncomment that line: const VIDEO_SOURCE = require(`../assets/${VIDEO_FILE || 'your_video_file.mp4'}`);
 // TODO: Set USE_VIDEO = true.
 
 export default function TrajectoryCalculationMonitor() {
