@@ -25,6 +25,7 @@ const VIDEO_SOURCE = null; // Placeholder to prevent build error
 const IMAGE_SOURCE = require('../assets/Insert_grey_clean.jpg'); // Fallback image
 
 // TODO: Drop your desired video file into tactical-monitor/assets/.
+// TODO: Set the line `const USE_VIDEO = false;` to true to use video
 // TODO: Uncomment that line: const VIDEO_SOURCE = null;
 // TODO: Uncomment that line: const VIDEO_SOURCE = require(`../assets/${VIDEO_FILE || 'your_video_file.mp4'}`);
 // TODO: Set USE_VIDEO = true.
